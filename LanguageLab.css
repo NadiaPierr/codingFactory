@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 8%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    float: left;
+}
+
+.logo > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.menu > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > li {
+    color: #7CE1F8;
+    justify-content: center;
+}
+
+.menu  li:hover {
+    background-color: #06899c;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #7CE1F8;
+    font-size: 1.5rem;
+}
+
+.menu-toggle {
+    display: none;
+    padding-top: 100px;
+    height: 100px;
+}
+
+.menu-toggle > ul > li {
+    line-height: 50px;
+    text-align: center;
+    background-color: #7CE1F8;
+    border-bottom: 1px solid black;
+}
+
+.menu-toggle > ul > li > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+
+.slider {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(./slider2.png)
+}
+
+.title {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+.title > p {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 25%;
+
+}
+.subtitle {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 25%
+}
+
+.subtitle > p {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.main  {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.main-title {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.main-text  {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer {  
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #7CE1F8;
+}
+
+.copyright {
+    width: 85%;
+    float: left;
+}
+
+.copyright > p {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.social {
+    width: 15%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.social > p {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: black;
+}
+
+.social > i {
+    font-size: 30px;
+    color: white;
+    margin-right: 5px;
+}
+
+.social > a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-left: 0.2em;
+}
+
+.nav-toggle {
+    width: 100%;
+    display: none;
+}
+
+.nav-toggle > button {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .main-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .logo > img {
+        width: auto;
+        height: 65px; 
+    }
+
+    .title > p {
+        font-size: 32px;
+    }
+
+    .subtitle > p {
+        font-size: 25px;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    .title > p {
+        font-size: 29px;
+    }
+
+    .subtitle > p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .logo > img {
+        width: auto;
+        height: 60px;
+    }
+
+    .title > p {
+        font-size: 24px;
+    }
+
+    .subtitle > p {
+        font-size: 18px;
+    }
+
+    .main-title > h1 {
+        font-size: 24px;
+    }
+
+    .main-text > p {
+        font-size: 14px;
+    }
+
+
+    .nav-toggle {
+        display: block;
+        float: right;
+        margin: 20px;
+    }
+
+    .nav-toggle > button {
+        display: block;
+        width: 45px;
+        height: 45px;
+        float: right;
+    }
+
+ /*    form.search input[type=text] {
+        width: 75px;
+    }
+
+    form.search button {
+        position: absolute;
+        width: 40px;
+    } */
+
+}
